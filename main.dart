@@ -1,22 +1,22 @@
 void main() {
-  String userinput = "444558744411225";
-  String finalresult = "";
+  String userInput = "444558744411225";
+  String finalResult = "";
   int times = 0;
-  for (int count = 0; count < userinput.length; count++) {
-    for (int count_2 = 0; count_2 < userinput.length; count_2++) {
-      if (userinput[count] == userinput[count_2]) {
+  for (int count = 0; count < userInput.length; count++) {
+    for (int count_2 = 0; count_2 < userInput.length; count_2++) {
+      if (userInput[count] == userInput[count_2]) {
         ++times;
       }
     }
     if (count == 0) {
-      finalresult =
-          finalresult + userinput[count].toString() + times.toString();
-    } else if (userinput[count] != userinput[count - 1]) {
-      finalresult =
-          finalresult + userinput[count].toString() + times.toString();
+      finalResult =
+          finalResult + userInput[count].toString() + times.toString();
+    } else if (userInput[count] != userInput[count - 1]) {
+      finalResult =
+          finalResult + userInput[count].toString() + times.toString();
     }
     times = 0;
   }
-  print(finalresult);
+  print(finalResult);
 }
 
